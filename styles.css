@@ -18,6 +18,15 @@
    height: auto;
    transform: translate(-50%, -50%);
 }
+    .top-right-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .resize-image {
+        height: 1.5em; /* Adjust based on the desired size */
+    }
 
 body {
    margin: 0;

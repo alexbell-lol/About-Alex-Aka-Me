@@ -20,14 +20,13 @@
 }
     .top-right-link {
         position: absolute;
-        top: 10px; /* Adjust top margin */
-        right: 10px; /* Adjust right margin */
+        top: 10px;
+        right: 10px;
     }
 
     .resize-image {
-        width: 50px; /* Adjust this value to match the size of the controller */
+        width: 100px; /* Increase the width to make the image bigger */
         height: auto; /* Keeps the image's aspect ratio */
-    }
 
 body {
    margin: 0;

@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Lilita+One&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #8C59F1;
-    background-color: #282c34;
+    background-image: url('https://github.com/alexbell-lol/Galaxy-Hub-Code-Remake/blob/main/Screenshot%202024-08-16%206.52.37%20AM.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,9 +19,10 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1.2;
     color: #8C59F1;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .navbar {
@@ -50,7 +54,7 @@ h1 {
 .footer-link {
     position: fixed;
     bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #8C59F1;
     text-decoration: none;
 }
@@ -67,11 +71,11 @@ h1 {
 }
 
 .version-info .version-number {
-    font-size: 80px;
+    font-size: 40px;
     margin: 0;
 }
 
 .version-info .version-text {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
 }

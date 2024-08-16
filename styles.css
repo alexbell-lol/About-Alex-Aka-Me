@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 body {
     margin: 0;
-    font-family: IBM Plex Sans, sans-serif;
+    font-family: 'Lilita One', sans-serif;
     color: #8C59F1;
     background-color: #282c34;
     display: flex;
@@ -48,11 +50,28 @@ h1 {
 .footer-link {
     position: fixed;
     bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #8C59F1;
     text-decoration: none;
 }
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+.version-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.version-info .version-number {
+    font-size: 80px;
+    margin: 0;
+}
+
+.version-info .version-text {
+    font-size: 20px;
+    margin: 0;
 }

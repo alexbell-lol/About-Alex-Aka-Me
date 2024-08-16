@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
     margin: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Fredoka One', sans-serif;
     color: #8C59F1;
-    background-image: url('https://github.com/alexbell-lol/Galaxy-Hub-Code-Remake/blob/main/Screenshot%202024-08-16%206.52.37%20AM.png?raw=true');
+    background-image: url('https://github.com/alexbell-lol/Galaxy-Hub-Code-Remake/blob/main/Screenshot%202024-08-16%207.20.48%20AM.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,6 @@ h1 {
     font-size: 5rem;
     line-height: 1.2;
     color: #8C59F1;
-    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .navbar {

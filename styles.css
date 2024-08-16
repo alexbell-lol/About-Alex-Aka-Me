@@ -3,6 +3,16 @@ body {
     font-family: IBM Plex Sans, sans-serif;
     color: white;
     background-color: #282c34; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding-top: 80px; 
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
 }
 
 .navbar {
@@ -11,8 +21,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
-    padding: 0 20px; 
-    border-radius: 0 0 8px 8px;
+    padding: 0 20px;
+    border-radius: 0 0 8px 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     position: fixed; 
     top: 0;
@@ -29,15 +39,4 @@ body {
 
 .navbar-logo:hover {
     transform: scale(1.1); 
-}
-
-.top-right-link {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.resize-image {
-    width: 50px; 
-    height: auto; 
 }

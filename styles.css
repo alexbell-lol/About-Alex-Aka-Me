@@ -1,28 +1,30 @@
-    .top-right-link {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    .resize-image {
-        width: 10px; 
-        height: auto; 
-
 body {
-   margin: 0;
-   font-family: IBM Plex Sans, sans-serif;
-   color: white;
+    margin: 0;
+    font-family: IBM Plex Sans, sans-serif;
+    color: white;
 }
+
 .navbar {
     background-color: #8C59F1; /* Purple background */
     height: 60px; /* Adjust the height as needed */
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align the image to the right */
+    justify-content: center; /* Center the image in the navbar */
     padding: 0 16px;
 }
 
 .navbar-logo {
-    height: 10%; /* Make the logo fit the navbar height */
+    height: 40px; /* Set a specific height for the logo */
     width: auto; /* Maintain aspect ratio */
+}
+
+.top-right-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.resize-image {
+    width: 50px; /* Adjust as needed */
+    height: auto; 
 }

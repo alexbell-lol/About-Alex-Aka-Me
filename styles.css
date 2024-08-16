@@ -11,10 +11,6 @@ body {
     min-height: 100vh;
     padding: 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: relative;
 }
 
@@ -55,6 +51,9 @@ body {
     background-color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
     z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
 }
 
 .footer-link:hover {

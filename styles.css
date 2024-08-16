@@ -34,24 +34,15 @@ body {
    color: white;
 }
 .navbar {
-    background-color: #8C59F1;
-    overflow: hidden;
-    padding: 14px 16px;
-    text-align: center;
+    background-color: #8C59F1; /* Purple background */
+    height: 60px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align the image to the right */
+    padding: 0 16px;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: background-color 0.3s;
+.navbar-logo {
+    height: 100%; /* Make the logo fit the navbar height */
+    width: auto; /* Maintain aspect ratio */
 }
-
-.navbar a:hover {
-    background-color: #6C44CC;
-}
-

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: IBM Plex Sans, sans-serif;
-    color: white;
+    color: #8C59F1;
     background-color: #282c34;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@ h1 {
     margin: 0;
     font-size: 3rem;
     line-height: 1.2;
+    color: #8C59F1;
 }
 
 .navbar {
@@ -45,7 +46,7 @@ h1 {
 }
 
 .footer-link {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     font-size: 1rem;
     color: #8C59F1;

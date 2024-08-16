@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
     margin: 0;
@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     padding: 0;
     text-align: center;
+    position: relative; /* Ensure body has a relative position */
 }
 
 .navbar {
@@ -29,7 +30,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure navbar is on top */
 }
 
 .navbar-logo {
@@ -43,9 +44,30 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.controller-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure controller is on top */
+}
+
+.controller-image {
+    height: 120px;
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controller-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
 main {
     margin-top: 140px; /* Adjusted for the taller navbar */
     text-align: center;
+    position: relative; /* Ensure text is positioned relative to main */
+    z-index: 1; /* Ensure main content is above background */
+    padding: 20px; /* Ensure content is not too close to the edges */
 }
 
 h1 {
@@ -57,8 +79,6 @@ h1 {
 }
 
 .footer-link {
-    position: absolute;
-    bottom: 20px;
     font-size: 1.5rem;
     color: #8C59F1;
     text-decoration: none;
@@ -67,6 +87,7 @@ h1 {
     border-radius: 8px;
     background-color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1; /* Ensure footer link is above background */
 }
 
 .footer-link:hover {
@@ -79,6 +100,8 @@ h1 {
     bottom: 20px;
     right: 20px;
     text-align: right;
+    color: #8C59F1;
+    z-index: 1; /* Ensure version info is above background */
 }
 
 .version-info .version-number {

@@ -23,6 +23,6 @@ body {
 }
 
 .navbar-logo {
-    height: 100%; /* Make the logo fit the navbar height */
+    height: 10%; /* Make the logo fit the navbar height */
     width: auto; /* Maintain aspect ratio */
 }

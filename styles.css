@@ -14,8 +14,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -23,7 +23,7 @@ body {
   height: 120px;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Aligning items to the right */
+  justify-content: space-between; /* Space between elements */
   padding: 0 30px;
   border-bottom: 3px solid #6B3F9D;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -46,8 +46,10 @@ body {
 .center-content {
   text-align: center;
   z-index: 1;
-  position: relative;
-  flex: 1; /* This ensures the content is centered vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .center-content h1 {
@@ -59,10 +61,10 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center; /* Centering the content horizontally */
+  justify-content: center;
   align-items: center;
-  padding: 20px;
   width: 100%;
+  padding: 20px;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -119,4 +121,37 @@ body {
 
 .logo:hover {
   filter: drop-shadow(0 0 30px #685dff);
+}
+
+/* Centering the "Galaxy Hub - V4 (CODED VERSION!)!" text */
+.centered-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #8C59F1;
+  font-size: 4rem;
+}
+
+/* Centering the "Submit A Website" link */
+.footer {
+  justify-content: center; /* Centering horizontally */
+}
+
+.footer a {
+  color: #8C59F1;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid #8C59F1;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+  background-color: #8C59F1;
+  color: #fff;
+  text-decoration: underline;
 }

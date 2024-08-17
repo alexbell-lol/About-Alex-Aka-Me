@@ -13,6 +13,7 @@ body {
   padding: 0;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -22,7 +23,7 @@ body {
   height: 120px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* Aligning items to the right */
   padding: 0 30px;
   border-bottom: 3px solid #6B3F9D;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -34,7 +35,6 @@ body {
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: #DA70D6;
   text-align: center;
@@ -46,10 +46,8 @@ body {
 .center-content {
   text-align: center;
   z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  flex: 1; /* This ensures the content is centered vertically */
 }
 
 .center-content h1 {
@@ -61,7 +59,7 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centering the content horizontally */
   align-items: center;
   padding: 20px;
   width: 100%;
@@ -75,16 +73,19 @@ body {
 
 .footer a,
 .footer a:visited {
-  color: #DA70D6;
-  font-size: 16px;
+  color: #8C59F1;
+  font-size: 1.5rem;
   text-decoration: none;
-  text-underline-offset: 2.5px;
-  transition: color 200ms, text-decoration 200ms;
+  border: 2px solid #8C59F1;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer a:hover {
-  text-decoration: underline;
-  color: #DA70D6;
+  background-color: #8C59F1;
+  color: #fff;
 }
 
 .version-info {
@@ -107,10 +108,13 @@ body {
 }
 
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 80px; /* Adjusted size */
+  width: 80px; /* Adjusted size */
   will-change: filter;
   transition: filter 300ms;
+  position: absolute;
+  top: 20px; /* Position within navbar */
+  right: 30px; /* Position within navbar */
 }
 
 .logo:hover {
